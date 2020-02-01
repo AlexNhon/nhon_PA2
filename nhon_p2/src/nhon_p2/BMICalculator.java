@@ -34,10 +34,10 @@ public class BMICalculator {
 	public void calculateBmi() {
 		double userWeight = getWeight();
 		double userHeight = getHeight();
-		if (choice == 1) {
+		if (choice == 1) { // Calculation for Imperial
 			this.BMI = (703 * userWeight) / (userHeight * userHeight);
 		}
-		else if (choice == 2) {
+		else if (choice == 2) { // Calculation for Metric
 			userHeight = userHeight / 100;
 			this.BMI = userWeight / (userHeight * userHeight);
 		}
